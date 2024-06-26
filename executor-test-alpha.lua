@@ -1095,7 +1095,7 @@ local script = G2L["43"];
 	
 	
 	local function Execute(...: string)
-		loadstring(tostring(...))
+		loadstring(tostring(...))();
 	end
 	
 	
