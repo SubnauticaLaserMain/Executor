@@ -401,50 +401,64 @@ G2L["32"]["ClearTextOnFocus"] = false;
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs.ScriptingBar.Scripts.Apply Color
 local function C_13()
 local script = G2L["13"];
-	-- Define your original text
-	local originalText = "This is a local game played worldwide."
 	
-	-- Function to apply colors to specific words using HTML-like tags
-	local function applyColors(text)
-		-- Define color mappings for specific words with hexadecimal color codes
-		local colorMap = {
-			["local"] = "#00FFFF",   -- Cyan color for "local" (hex: #00FFFF)
-			["game"] = "#FF0000",    -- Red color for "game" (hex: #FF0000)
-			-- Add more words and corresponding colors as needed
-		}
+	local coro = coroutine.create(function()
 	
-		-- Split the text into words and process each word
-		local words = {}
-		for word in string.gmatch(text, "%S+") do
-			table.insert(words, word)
-		end
+		-- Define your original text
+		local originalText = "This is a local game played worldwide."
 	
-		-- Generate RichText formatted text with HTML-like tags
-		local coloredText = ""
-		for i, word in ipairs(words) do
-			local color = colorMap[word:lower()]
-			if color then
-				coloredText = coloredText .. "<font color='" .. color .. "'>" .. word .. "</font> "
-			else
-				coloredText = coloredText .. word .. " "
+		-- Function to apply colors to specific words using HTML-like tags
+		local function applyColors(text)
+			-- Define color mappings for specific words with hexadecimal color codes
+			local colorMap = {
+				["local"] = "#00FFFF",   -- Cyan color for "local" (hex: #00FFFF)
+				["game"] = "#FF0000",    -- Red color for "game" (hex: #FF0000)
+				-- Add more words and corresponding colors as needed
+			}
+	
+			-- Split the text into words and process each word
+			local words = {}
+			for word in string.gmatch(text, "%S+") do
+				table.insert(words, word)
 			end
+	
+			-- Generate RichText formatted text with HTML-like tags
+			local coloredText = ""
+			for i, word in ipairs(words) do
+				local color = colorMap[word:lower()]
+				if color then
+					coloredText = coloredText .. "<font color='" .. color .. "'>" .. word .. "</font> "
+				else
+					coloredText = coloredText .. word .. " "
+				end
+			end
+	
+			return coloredText
 		end
 	
-		return coloredText
-	end
-	
-	-- Update the TextLabel's RichText property with the colored text
-	local textLabel = script.Parent.Parent:FindFirstChild('Text-Container|Script Container') -- Assumes this script is a child of the TextLabel
-	textLabel.RichText = true
+		-- Update the TextLabel's RichText property with the colored text
+		local textLabel = script.Parent.Parent:FindFirstChild('Text-Container|Script Container') -- Assumes this script is a child of the TextLabel
+		textLabel.RichText = true
+	end)
 	
 	
+	
+	coroutine.resume(coro)
 end;
 task.spawn(C_13);
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs.ScriptingBar.Scripts.Execute Script
 local function C_15()
 local script = G2L["15"];
 	script.Parent.Parent.Gui.BottomPartApplier.Buttons.Execute.MouseButton1Click:Connect(function()
-		script.RemoteEvent:FireServer(script.Parent.Parent.ScrollingFrame:FindFirstChild('Text-Container|Script Container').Text)
+		local IsExecutor = true
+		
+		
+		
+		if not IsExecutor then
+			script.RemoteEvent:FireServer(script.Parent.Parent.ScrollingFrame:FindFirstChild('Text-Container|Script Container').Text)
+		else
+			loadstring(script.Parent.Parent.ScrollingFrame:FindFirstChild('Text-Container|Script Container').Text)()
+		end
 	end)
 end;
 task.spawn(C_15);
