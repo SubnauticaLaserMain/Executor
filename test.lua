@@ -465,7 +465,7 @@ task.spawn(C_15);
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs.ScriptingBar.Scripts.Extra.CopyScript
 local function C_19()
 local script = G2L["19"];
-	local oldSetclipboard = setclipboard
+	local oldSetclipboard = setclipboard or nil
 	
 	
 	
@@ -526,7 +526,7 @@ local script = G2L["1b"];
 	
 	
 	
-	script.Parent.Parent.Parent.Gui.BottomPartApplier.Buttons.Copy.MouseButton1Click:Connect(buttonScript)
+	script.Parent.Parent.Parent.Gui.BottomPartApplier.Buttons.Paste.MouseButton1Click:Connect(buttonScript)
 end;
 task.spawn(C_1b);
 
