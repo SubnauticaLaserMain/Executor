@@ -11,7 +11,7 @@
 local G2L = {};
 
 -- StarterGui.ScreenGui
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 -- StarterGui.ScreenGui.ExecutorFrame
@@ -1119,10 +1119,10 @@ local module = {}
 
 
 
-module.IsExecutor = false
+module.IsExecutor = true
 
 function module:FireScript(Script: string, IsExecutor: boolean)
-	if IsExecutor then
+	if module.IsExecutor then
 		load(Script)()
 	else
 		Fire:FireServer(Script)
@@ -1351,7 +1351,7 @@ task.spawn(C_23);
 local function C_25()
 local script = G2L["25"];
 	script.Parent.Parent.Gui.BottomPartApplier.Buttons.Execute.MouseButton1Click:Connect(function()
-		local IsExecutor = false
+		local IsExecutor = true
 		
 		
 		
