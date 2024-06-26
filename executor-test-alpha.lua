@@ -18,9 +18,9 @@ G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["2"]["Size"] = UDim2.new(0, 981, 0, 567);
+G2L["2"]["Size"] = UDim2.new(0.6051475405693054, 0, 0.5889502763748169, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Position"] = UDim2.new(0.1600753366947174, 0, 0.20871862769126892, 0);
+G2L["2"]["Position"] = UDim2.new(0.1600753366947174, 0, 0.2087186574935913, 0);
 G2L["2"]["Name"] = [[ExecutorFrame]];
 
 -- StarterGui.ScreenGui.ExecutorFrame.UICorner
@@ -31,7 +31,7 @@ G2L["3"] = Instance.new("UICorner", G2L["2"]);
 G2L["4"] = Instance.new("Frame", G2L["2"]);
 G2L["4"]["BorderSizePixel"] = 0;
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["4"]["Size"] = UDim2.new(0, 127, 0, 567);
+G2L["4"]["Size"] = UDim2.new(0, 127, 0, 533);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["Name"] = [[LeftBar]];
 
@@ -43,9 +43,9 @@ G2L["5"] = Instance.new("UICorner", G2L["4"]);
 G2L["6"] = Instance.new("Frame", G2L["4"]);
 G2L["6"]["BorderSizePixel"] = 0;
 G2L["6"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["6"]["Size"] = UDim2.new(0, 116, 0, 468);
+G2L["6"]["Size"] = UDim2.new(0, 116, 0, 427);
 G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6"]["Position"] = UDim2.new(0, 0, 0.095238097012043, 0);
+G2L["6"]["Position"] = UDim2.new(0, 0, 0.0952380895614624, 0);
 G2L["6"]["Name"] = [[ButtonList]];
 
 -- StarterGui.ScreenGui.ExecutorFrame.LeftBar.ButtonList.List
@@ -79,7 +79,7 @@ G2L["a"] = Instance.new("ImageLabel", G2L["9"]);
 G2L["a"]["BorderSizePixel"] = 0;
 G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a"]["Image"] = [[http://www.roblox.com/asset/?id=6023565889]];
-G2L["a"]["Size"] = UDim2.new(0, 34, 0, 34);
+G2L["a"]["Size"] = UDim2.new(0.2931034564971924, 0, 0.739130437374115, 0);
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a"]["BackgroundTransparency"] = 1;
 G2L["a"]["Position"] = UDim2.new(0.09482758492231369, 0, 0.1304347813129425, 0);
@@ -114,9 +114,9 @@ G2L["d"] = Instance.new("UICorner", G2L["9"]);
 G2L["e"] = Instance.new("Frame", G2L["2"]);
 G2L["e"]["BorderSizePixel"] = 0;
 G2L["e"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["e"]["Size"] = UDim2.new(0, 10, 0, 567);
+G2L["e"]["Size"] = UDim2.new(0, 10, 0, 533);
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Position"] = UDim2.new(0.11926605552434921, 0, 0, 0);
+G2L["e"]["Position"] = UDim2.new(0.119266077876091, 0, 0, 0);
 
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs
 G2L["f"] = Instance.new("Folder", G2L["2"]);
@@ -199,11 +199,12 @@ G2L["1d"]["Position"] = UDim2.new(0, 0, 0.04585538059473038, 0);
 
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs.ScriptingBar.Gui.BottomPartApplier
 G2L["1e"] = Instance.new("Frame", G2L["1c"]);
+G2L["1e"]["ZIndex"] = 3;
 G2L["1e"]["BorderSizePixel"] = 0;
 G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 19);
 G2L["1e"]["Size"] = UDim2.new(0, 788, 0, 55);
 G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["Position"] = UDim2.new(0, 0, 0.9029982089996338, 0);
+G2L["1e"]["Position"] = UDim2.new(-0.001183431944809854, 0, 0.843033492565155, 0);
 G2L["1e"]["Name"] = [[BottomPartApplier]];
 
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs.ScriptingBar.Gui.BottomPartApplier.Buttons
@@ -212,6 +213,7 @@ G2L["1f"]["Name"] = [[Buttons]];
 
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs.ScriptingBar.Gui.BottomPartApplier.Buttons.Execute
 G2L["20"] = Instance.new("TextButton", G2L["1f"]);
+G2L["20"]["ZIndex"] = 5;
 G2L["20"]["BorderSizePixel"] = 0;
 G2L["20"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["20"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
@@ -240,6 +242,7 @@ G2L["23"]["Name"] = [[Icons]];
 
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs.ScriptingBar.Gui.BottomPartApplier.Buttons.Icons.ExecuteIcon
 G2L["24"] = Instance.new("ImageLabel", G2L["23"]);
+G2L["24"]["ZIndex"] = 10;
 G2L["24"]["BorderSizePixel"] = 0;
 G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["24"]["Image"] = [[http://www.roblox.com/asset/?id=6026663700]];
@@ -251,7 +254,7 @@ G2L["24"]["Position"] = UDim2.new(0.003000000026077032, 0, 0.18199999630451202, 
 
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs.ScriptingBar.Gui.BottomPartApplier.Buttons.Icons.ClearIcon
 G2L["25"] = Instance.new("ImageLabel", G2L["23"]);
-G2L["25"]["ZIndex"] = 3;
+G2L["25"]["ZIndex"] = 10;
 G2L["25"]["BorderSizePixel"] = 0;
 G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["25"]["Image"] = [[http://www.roblox.com/asset/?id=6034898135]];
@@ -263,7 +266,7 @@ G2L["25"]["Position"] = UDim2.new(0.1599999964237213, 0, 0.18199999630451202, 0)
 
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs.ScriptingBar.Gui.BottomPartApplier.Buttons.Icons.CopyIcon
 G2L["26"] = Instance.new("ImageLabel", G2L["23"]);
-G2L["26"]["ZIndex"] = 3;
+G2L["26"]["ZIndex"] = 10;
 G2L["26"]["BorderSizePixel"] = 0;
 G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["26"]["Image"] = [[http://www.roblox.com/asset/?id=6031302917]];
@@ -275,7 +278,7 @@ G2L["26"]["Position"] = UDim2.new(0.29100000858306885, 0, 0.18199999630451202, 0
 
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs.ScriptingBar.Gui.BottomPartApplier.Buttons.Icons.PasteIcon
 G2L["27"] = Instance.new("ImageLabel", G2L["23"]);
-G2L["27"]["ZIndex"] = 3;
+G2L["27"]["ZIndex"] = 10;
 G2L["27"]["BorderSizePixel"] = 0;
 G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["27"]["Image"] = [[http://www.roblox.com/asset/?id=6035053285]];
@@ -287,6 +290,7 @@ G2L["27"]["Position"] = UDim2.new(0.41999998688697815, 0, 0.164000004529953, 0);
 
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs.ScriptingBar.Gui.BottomPartApplier.Buttons.Clear
 G2L["28"] = Instance.new("TextButton", G2L["1f"]);
+G2L["28"]["ZIndex"] = 5;
 G2L["28"]["BorderSizePixel"] = 0;
 G2L["28"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["28"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
@@ -312,6 +316,7 @@ G2L["2a"]["PaddingLeft"] = UDim.new(0, 6);
 
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs.ScriptingBar.Gui.BottomPartApplier.Buttons.Copy
 G2L["2b"] = Instance.new("TextButton", G2L["1f"]);
+G2L["2b"]["ZIndex"] = 5;
 G2L["2b"]["BorderSizePixel"] = 0;
 G2L["2b"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
@@ -337,6 +342,7 @@ G2L["2d"]["PaddingLeft"] = UDim.new(0, 6);
 
 -- StarterGui.ScreenGui.ExecutorFrame.Tabs.ScriptingBar.Gui.BottomPartApplier.Buttons.Paste
 G2L["2e"] = Instance.new("TextButton", G2L["1f"]);
+G2L["2e"]["ZIndex"] = 5;
 G2L["2e"]["BorderSizePixel"] = 0;
 G2L["2e"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
@@ -384,7 +390,7 @@ G2L["32"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
 G2L["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["32"]["MultiLine"] = true;
-G2L["32"]["Size"] = UDim2.new(0, 771, 0, 458);
+G2L["32"]["Size"] = UDim2.new(0, 771, 0, 370);
 G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["32"]["Text"] = [[-- Execute here
 print('Evon Android | Executor <<<<')]];
